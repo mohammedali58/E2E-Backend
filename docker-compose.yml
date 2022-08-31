@@ -1,0 +1,31 @@
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    depends_on:
+      - postgres
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+    ports:
+      - '5003:3000'
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres:11
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: User
+    volumes:
+      - data:/var/lib/postgresql/data
+    networks:
+      - app-network
+volumes:
+  data:
+networks:
+  app-network: {}
