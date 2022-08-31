@@ -31,7 +31,7 @@
    
    used interfaces/controllers/DI containers
    
-   as the time was sensitive, If I had more time I would complete unit testing and apply exception handlers,dto andsequelize validators and value objects
+   as the time was sensitive, If I had more time I would complete unit testing and apply exception handlers,jwt ,dto andsequelize validators and value objects
  
  
 
