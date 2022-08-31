@@ -22,6 +22,20 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## What I have used to make this app
+   used clean architcture pattern to separate api layer, application layer(business) , persistence layer and core one
+   
+   used Sequelize as ORM and postgres as database
+   
+   tried to apply solid principle in this tool like Separation of concern and open-closed and so on
+   
+   used interfaces/controllers/DI containers
+   
+   as the time was sensitive, If I had more time I would complete unit testing and apply exception handlers,dto andsequelize validators and value objects
+ 
+ 
+
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
@@ -35,6 +49,9 @@ $ npm install
 ## Running the app
 
 ```bash
+ # with docker
+ $ docker-compose up
+
 # development
 $ npm run start
 
@@ -62,11 +79,6 @@ $ npm run test:cov
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
